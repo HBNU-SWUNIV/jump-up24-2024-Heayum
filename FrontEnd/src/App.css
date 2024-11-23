@@ -1,0 +1,28 @@
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --color-black: #000;
+  --color-background: #282828;
+  --color-modal: #9d9d9d;
+  --color-input: floralwhite;
+}
+
+html.dark {
+  --color-accent: #495057;
+  --color-bg: #212529;
+  --color-bg-darker: #495057;
+  --color-bg-sidebar: #343a40;
+  --color-bg-nav-hover: #222;
+  --color-bg-actived: #495057;
+  --color-border: #f8f9fa;
+  --color-text: #dee2e6;
+  --color-text-actived: #fff;
+  --color-text-hover: #adb5bd;
+  --color-badge: #495057;
+}
