@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kzp-FW-jWt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Page Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomePageController" id="Y6W-OH-hqX" customClass="WelcomePageController" customModule="hye_eum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUV-NG-629">
+                                <rect key="frame" x="161" y="481.66666666666669" width="71" height="36.000000000000057"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by MOBICOM.Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF1-SL-Bdh">
+                                <rect key="frame" x="113.33333333333333" y="784.33333333333337" width="166.66666666666669" height="15.666666666666629"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwf-nL-9ih">
+                                <rect key="frame" x="173" y="571.66666666666663" width="47" height="42.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47.240000000000002" id="BcG-Xh-Lng"/>
+                                    <constraint firstAttribute="height" constant="40.659999999999997" id="zIT-hB-f9U"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="             " backgroundImage="aqi.medium" catalog="system"/>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HYh-sI-Z8k"/>
+                                    <segue destination="PnX-6F-phR" kind="push" id="BA1-gm-vaP"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oSI-KO-Gnn">
+                                <rect key="frame" x="149.66666666666666" y="273" width="93.666666666666657" height="178.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoo-z2-b1E">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="89.333333333333329"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="혜">
+                                                <attributes>
+                                                    <font key="NSFont" size="72" name="KCC-Sonkeechung"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aj4-Qv-eIg">
+                                        <rect key="frame" x="0.0" y="89.333333333333314" width="93.666666666666671" height="89.333333333333314"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="  음">
+                                                <attributes>
+                                                    <font key="NSFont" size="72" name="KCC-Sonkeechung"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jwf-nL-9ih" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7Bb-xY-AUd"/>
+                            <constraint firstItem="TF1-SL-Bdh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9ML-gv-gsg"/>
+                            <constraint firstItem="qUV-NG-629" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DaF-hB-AY5"/>
+                            <constraint firstItem="qUV-NG-629" firstAttribute="top" secondItem="oSI-KO-Gnn" secondAttribute="bottom" constant="30" id="FET-bY-mbw"/>
+                            <constraint firstItem="oSI-KO-Gnn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="170" id="QIq-Ve-lyG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TF1-SL-Bdh" secondAttribute="bottom" constant="18" id="Vko-FP-yNe"/>
+                            <constraint firstItem="oSI-KO-Gnn" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gsd-8T-dKf"/>
+                            <constraint firstItem="Jwf-nL-9ih" firstAttribute="top" secondItem="qUV-NG-629" secondAttribute="bottom" constant="55" id="vpq-sa-PBr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7MV-D4-ygu"/>
+                    <connections>
+                        <outlet property="devByLogo" destination="TF1-SL-Bdh" id="Tgq-3H-odi"/>
+                        <outlet property="logoTextOne" destination="aoo-z2-b1E" id="prq-ry-nfy"/>
+                        <outlet property="logoTextTwo" destination="Aj4-Qv-eIg" id="vfM-Fo-Rsp"/>
+                        <outlet property="openingMent" destination="qUV-NG-629" id="PDX-2f-oQS"/>
+                        <outlet property="welcome_nextBtn" destination="Jwf-nL-9ih" id="ybq-lK-MKB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3590.0763358778627" y="2.8169014084507045"/>
+        </scene>
+        <!--InputPageController-->
+        <scene sceneID="YkE-oY-JMs">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="InputPageController" storyboardName="InputPage" referencedIdentifier="InputPageController" id="PnX-6F-phR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zoF-eP-Afj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxM-6Z-0gw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4214.5038167938928" y="2.8169014084507045"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="npZ-A2-FdY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kzp-FW-jWt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kMW-u2-3Fn">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="8RR-SC-loC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJV-UI-9Av" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663.3587786259541" y="2.8169014084507045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aqi.medium" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
